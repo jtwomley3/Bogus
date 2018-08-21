@@ -1,8 +1,8 @@
 {
-  "name": "express-react-starter",
+  "name": "bogus",
   "version": "0.1.0",
-  "description": "",
-  "author": "Connor Jones",
+  "description": "Scheduling and patient organization",
+  "author": "Jared Twomley",
   "license": "MIT",
   "engines": {
     "node": "8.x",
@@ -11,7 +11,7 @@
   "scripts": {
     "setup": "node tools/setupEnv.js",
     "start": "node dist/server/index.js",
-    "dev": "npm-run-all --parallel test:watch open:server open:client lint:watch",
+    "dev": "NODE_ENV=development npm-run-all --parallel test:watch open:server open:client lint:watch",
     "open:server": "nodemon src/server/index.js --watch src/server --exec babel-node",
     "open:client": "babel-node tools/srcServer.js",
     "lint": "esw webpack.config.* src tools --color",

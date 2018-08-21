@@ -6,8 +6,6 @@ class About extends React.Component {
     this.state = {
       
     };
-
-    this.flipRole = this.flipRole.bind(this);
   }
 
 
